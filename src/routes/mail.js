@@ -23,10 +23,10 @@ router.post("/mailer",(req,res)=>{
 
 		mailTransporter.sendMail(mailDetails, function (err, data) {
 			if (err) {
-				res.render("msg",{"result":"Unsuccessful"});
+				res.render("msg",{"result":"Unsuccessfull"});
                 console.log(data);
 			} else {
-				res.render("msg",{"result":"Successful"});
+				res.render("msg",{"result":"Successfully"});
                 console.log(data);
 			}
 		});
