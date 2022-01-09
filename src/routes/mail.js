@@ -17,7 +17,7 @@ router.post("/mailer",(req,res)=>{
 		let mailDetails = {
 			from: "nodemailer96@gmail.com",
 			to: req.body.email,
-			subject: "Test mail",
+			subject: "Test mail by shynu",
 			text: "Node.js testing mail for nodemailer",
 		};
 
