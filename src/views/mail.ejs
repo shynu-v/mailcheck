@@ -1,11 +1,15 @@
 <html>
-	<head>
-		<%- include('head'); -%>
-	</head>
+	 <head>
+        <%- include('head'); -%>
+    </head>
+
 	<body>
-		<%- include('nav'); -%>
-		<div style="text-align: center" class="mb-2">Enter your Email</div>
-		<div class="container formsize">
+			<%- include("bg") %>
+        
+        <div><%- include('nav'); -%></div>
+
+		<div style="text-align: center" class="mb-2 dindex">Enter your Email</div>
+		<div class="container formsize dindex">
 			<form
 				action="/home/mailer"
 				onsubmit="return emails(email,error)"
@@ -19,6 +23,6 @@
 				</div>
 				<button class="btn btn-block login-btn" style="width: 100%; background-color: blue">Send Email</button>
 			</form>
-		</div>
+		</div>		
 	</body>
 </html>
